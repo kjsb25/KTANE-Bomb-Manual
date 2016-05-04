@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bomb Manual v1.0</title>
+		<meta charset="UTF-8">
+		<link rel="icon" href="bombpics/favicon.ico" type="image/x-icon" />
+		<link href="http://fonts.googleapis.com/css?family=Cabin:400,400italic,700" rel="stylesheet" type="text/css">
+
+		<!-- JQuery and Jquery UI -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+		<!-- CSS Sheet -->
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+
+		<!-- JS -->
+		<script src="bombmodules.js"></script>
+	</head>
+	<body onunload="">
+		<div id="header">
+			<img id="headerpic" src="bombpics/logo-transparent-small.png">
+		</div>
+		<div id="menu">
+			<h1>Bomb Manual v1.0</h1>
+			<div id="infoBar">
+				<h3>Serial Last Digit:</h3>
+				<h3 id="serialNumLastDigit" onclick="getSerialNumEven()">Unset</h3>
+				<h3># of Batteries:</h3>
+				<h3 id="numBatteries" onclick="getnumBatteries()">0</h3>
+				<h3>Parallel Port:</h3>
+				<h3 id="parallel" onclick="getParallel()">Unset</h3>
+				<h3>Serial Number Vowel:</h3>
+				<h3 id="serialNumVowel" onclick="getSerialNumVowel()">Unset</h3>
+				<h3>Strikes:</h3>
+				<h3 id="strikes" onclick="getnumStrikes()">0</h3>
+				<button type="Button" onclick="addStrike()">Strike!</button>
+				<button type="Button" onclick="clearBombValues()">Clear Bomb Properties</button>
+			</div>
+			<div id="buttons">
+				<button type="Button" onclick="sWires1('output')">Horizontal Wires</button>
+				<button type="Button" onclick="button('output')">Button</button>
+				<button type="Button" onclick="keypad('output')">Keypad</button>
+				<button class="inactive" type="Button" onclick="Simonsays('output')">Simon Says</button>
+				<button class="inactive" type="Button" onclick="WhosOnFirst('output')">Who's On First</button>
+				<button class= "inactive" type="Button" onclick="memory('output')">Oscilloscope</button>
+				<button class="inactive" type="Button" onclick="morse('output')">Morse Code</button>
+				<button class="Button" type="Button" onclick="cwires('output')">Vertical Wires</button>
+				<button class="inactive" type="Button" onclick="WireSequences('output')">Crossed Wires</button>
+				<button class="inactive" type="Button" onclick="maze('output')">Maze</button>
+				<button class="inactive" type="Button" onclick="password('output')">Password</button>
+				<button type="Button" onclick="knobOpen('output')">Knob</button>
+			</div>
+		</div>
+		<div id="output">
+		</div>
+		<p>This tool was created to be used with the game found here: </p>
+		<a href="http://www.keeptalkinggame.com/">http://www.keeptalkinggame.com/</a>
+
+	</body>	
+</html>
