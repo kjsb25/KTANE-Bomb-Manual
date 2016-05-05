@@ -505,11 +505,11 @@ function morse(output){
 }
 function cwires(output){
 	var out=document.getElementById("output");
+	out.innerHTML="";
 	
 	var prompts=document.createElement("DIV");
 
 	out.appendChild(prompts);
-
 	//Red
 	prompts.innerHTML="<label>Red on Wire:";
 	var radio=document.createElement("INPUT");
