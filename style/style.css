@@ -1,0 +1,177 @@
+		
+			body{
+				background-color: #222326 !important;
+				font: 400 1em "Cabin",Helvetica,Arial,sans-serif;
+			}
+			p,strong{
+				display: inline;
+			}
+			strong{
+				font-size: 25px;
+			}
+			div#header{
+				width: 100%;
+				text-align: center;
+
+				content: "";
+ 				display: table;
+  				clear: both;
+			}
+			div#menu *{
+				text-align: center;
+			}
+			#headerpic{
+				height: 220px;
+				width: 80%;
+				margin: 15px;
+				float: center;
+			}
+			div#login{
+				border: 4px solid #BA4423;
+				border-radius: 20px;
+				float: left;
+				margin: 50px;
+				display: block;
+				margin-right: 90px;
+				margin-left: 90px;
+			}
+			#login *{
+				margin: 6px;
+			}
+			label{
+				color: white;
+				margin: 8px;
+			}
+			#output label{
+				color: black;
+				margin: 8px;
+			}
+			#infoBar *{
+				display: inline;
+				text-align: center;
+				margin-top: auto;
+				margin-bottom: auto;
+				color: white;
+			}
+			#infoBar button{
+				margin:6px;
+			}
+			#infoBar *:nth-child(2n){
+				margin-right: 20px;
+				margin-left: 5px;
+			}
+			#serialNumLastDigit, #numBatteries, #parallel, #serialNumVowel, #strikes{
+				color: red;
+			}
+			h1{
+				text-align: center;
+				margin: auto;
+				margin-top: 20px;
+				color: white;
+			}
+			div#buttons{
+				height:25px;
+			}
+			div#output{
+				margin: auto;
+				margin-top: 5px;
+				background-color: #BDBFC7;
+				border: 1px solid ;
+				width: 90%;
+				height: 500px;
+			}
+			div#output *{
+				margin: 10px;
+			}
+			button,.button{
+   				border-radius: 5px;
+   				font-size: 1em;
+   				background: #BA4423 none repeat scroll 0% 0%;
+   				border-style: none;
+   				color: #FBF8F8;
+ 			    cursor: pointer;
+				margin:2px;
+				background-color: #DB522C;
+				font: 400 1em "Cabin",Helvetica,Arial,sans-serif;
+			}
+			p,a{
+				text-align: center;
+			}
+			input{
+				margin: auto;
+			}
+			.backgroundwords{
+				display: block;
+			}
+			.backgroundwords p{
+				color: white;
+				width: 50px;
+			}
+			.textblock{
+				float: left;
+				width:500px;
+				margin: 40px;
+			}
+
+			a{
+				color:#BA4423;
+			}
+
+			/*JQuery UI*/
+			#keypads img{
+				width: 80px;
+				height: 80px;
+				border: none;
+			}
+			#keypadoutput img{
+				width: 80px;
+				height: 80px;
+				border: none;
+			}
+
+			#keypadoutput strong{
+				font-size: 40px;
+			}
+
+			#output #keypadoutput{
+				width: 400px;
+				margin: auto;
+			}
+
+			#keypads .ui-selected{
+				border: solid 5px #BA4423;
+				width: 70px;
+				height: 70px;
+			}
+
+
+			.knoblight{
+				border: solid 5px #BA4423;
+				border-radius: 200px;
+				width: 12%;
+				height: 60px;
+				display:inline;
+				float: left;
+			}
+			#knoblights .knoblight.ui-selected{
+				background-color: #BA4423;
+			}
+
+			#l4,#l10{
+				margin-left: 70px;
+			}
+
+			.inactive{
+				color: #7D2F19;
+			}
+
+			#clearfix{
+				content: "";
+ 				display: table;
+  				clear: both;
+			}
+
+			h2{
+				text-align: center;
+				color: #BA4423;
+			}
