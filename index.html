@@ -5,14 +5,14 @@
 		<meta charset="UTF-8">
 		<link rel="icon" href="bombpics/favicon.ico" type="image/x-icon" />
 		<link href="http://fonts.googleapis.com/css?family=Cabin:400,400italic,700" rel="stylesheet" type="text/css">
-
 		<!-- JQuery and Jquery UI -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script
+		src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+		integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+		crossorigin="anonymous"></script>
 		<!-- CSS Sheet -->
 		<link rel="stylesheet" type="text/css" href="style/style.css">
-
 		<!-- JS -->
 		<script src="bombmodules.js"></script>
 	</head>
@@ -39,7 +39,8 @@
 			<div id="buttons">
 				<button type="Button" onclick="sWires1('output')">Horizontal Wires</button>
 				<button type="Button" onclick="button('output')">Button</button>
-				<button type="Button" onclick="keypad('output')">Keypad</button>
+				<!-- Fix for Github, php can't execute -->
+				<button class="inactive" type="Button" onclick="keypad('output')">Keypad</button>
 				<button class="inactive" type="Button" onclick="Simonsays('output')">Simon Says</button>
 				<button class="inactive" type="Button" onclick="WhosOnFirst('output')">Who's On First</button>
 				<button class= "inactive" type="Button" onclick="memory('output')">Oscilloscope</button>
@@ -55,6 +56,5 @@
 		</div>
 		<p>This tool was created to be used with the game found here: </p>
 		<a href="http://www.keeptalkinggame.com/">http://www.keeptalkinggame.com/</a>
-
-	</body>	
+	</body>
 </html>
