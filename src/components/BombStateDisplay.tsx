@@ -1,5 +1,5 @@
 import { Button, Grid, Typography } from '@mui/material'
-import React from 'react'
+import React, { MouseEventHandler } from 'react'
 import { BombState } from '../types/utilityTypes'
 import styled from 'styled-components'
 
@@ -9,7 +9,8 @@ const StateValue = styled.span`
 
 type Props = {
     bombState: BombState
-    strike: Function
+    strike: MouseEventHandler<HTMLButtonElement>
+    clearBombState: MouseEventHandler<HTMLButtonElement>
 }
 
 function BombStateDisplay(props: Props) {
@@ -38,10 +39,14 @@ function BombStateDisplay(props: Props) {
                 <StateValue>{props.bombState.numStrikes}</StateValue>
             </Grid>
             <Grid item>
-                <Button variant="contained">Strike!</Button>
+                <Button variant="contained" onClick={props.strike}>
+                    Strike!
+                </Button>
             </Grid>
             <Grid item>
-                <Button variant="contained">Clear Bomb Properties</Button>
+                <Button variant="contained" onClick={props.clearBombState}>
+                    Clear Bomb Properties
+                </Button>
             </Grid>
         </Grid>
     )
