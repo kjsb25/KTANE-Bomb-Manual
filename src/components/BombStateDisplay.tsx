@@ -1,18 +1,49 @@
-import { Typography } from '@mui/material'
+import { Button, Grid, Typography } from '@mui/material'
 import React from 'react'
-import { BooleanState } from '../types/utilityTypes'
+import { BombState } from '../types/utilityTypes'
+import styled from 'styled-components'
+
+const StateValue = styled.span`
+    color: orangered;
+`
 
 type Props = {
-    isSerialDigitEven: BooleanState
+    bombState: BombState
+    strike: Function
 }
 
 function BombStateDisplay(props: Props) {
     return (
-        <div>
-            <Typography>
-                Serial Last Digit: {props.isSerialDigitEven}
-            </Typography>
-        </div>
+        <Grid container spacing={2} alignItems="center">
+            <Grid item>
+                <Typography display="inline">
+                    Serial Last Digit is Even:{' '}
+                </Typography>
+                <StateValue>{props.bombState.isSerialDigitEven}</StateValue>
+            </Grid>
+            <Grid item>
+                <Typography display="inline"># Batteries: </Typography>
+                <StateValue>{props.bombState.numBatteries}</StateValue>
+            </Grid>
+            <Grid item>
+                <Typography display="inline">Parallel Port: </Typography>
+                <StateValue>{props.bombState.isParallelPort}</StateValue>
+            </Grid>
+            <Grid item>
+                <Typography display="inline">Serial # has Vowel: </Typography>
+                <StateValue>{props.bombState.isSerialNumVowel}</StateValue>
+            </Grid>
+            <Grid item>
+                <Typography display="inline">Strikes: </Typography>
+                <StateValue>{props.bombState.numStrikes}</StateValue>
+            </Grid>
+            <Grid item>
+                <Button variant="contained">Strike!</Button>
+            </Grid>
+            <Grid item>
+                <Button variant="contained">Clear Bomb Properties</Button>
+            </Grid>
+        </Grid>
     )
 }
 
