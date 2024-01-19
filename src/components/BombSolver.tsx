@@ -1,6 +1,6 @@
-import React, { ReactNode, useState } from 'react'
+import React, { useState } from 'react'
 import { BombState, BooleanState } from '../types/utilityTypes'
-import { HashRouter, Link, Route, Routes } from 'react-router-dom'
+import { Link, Route, Routes } from 'react-router-dom'
 import BombStateDisplay from './BombStateDisplay'
 import HorizontalWires from './HorizontalWires'
 import ButtonSolver from './ButtonSolver'
@@ -48,7 +48,6 @@ const puzzleSolvers: puzzleType[] = [
 
 function BombSolver() {
     const [bombState, setBombState] = useState<BombState>(initialBombState)
-    const [activeSolverId, setActiveSolverId] = useState(0)
 
     function strike() {
         setBombState({ ...bombState, numStrikes: bombState.numStrikes + 1 })
