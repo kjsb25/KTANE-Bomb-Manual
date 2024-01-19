@@ -37,7 +37,7 @@ function App() {
             <Stack
                 component={Main}
                 direction="column"
-                justifyContent="space-between"
+                justifyContent="flex-start"
                 alignItems="center"
                 spacing={2}
             >
