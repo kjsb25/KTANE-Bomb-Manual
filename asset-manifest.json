@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/KTANE-Bomb-Manual/static/css/main.73fb6361.css",
-    "main.js": "/KTANE-Bomb-Manual/static/js/main.5031c7e4.js",
+    "main.js": "/KTANE-Bomb-Manual/static/js/main.fc08b6a4.js",
     "static/js/787.f44ef36e.chunk.js": "/KTANE-Bomb-Manual/static/js/787.f44ef36e.chunk.js",
     "static/media/logo-transparent.png": "/KTANE-Bomb-Manual/static/media/logo-transparent.c266147d1f91c20809ba.png",
     "static/media/cabin-latin-400-normal.woff": "/KTANE-Bomb-Manual/static/media/cabin-latin-400-normal.048863659b847ea3d564.woff",
@@ -12,11 +12,11 @@
     "static/media/cabin-vietnamese-400-normal.woff2": "/KTANE-Bomb-Manual/static/media/cabin-vietnamese-400-normal.62e4a16c9728053af856.woff2",
     "index.html": "/KTANE-Bomb-Manual/index.html",
     "main.73fb6361.css.map": "/KTANE-Bomb-Manual/static/css/main.73fb6361.css.map",
-    "main.5031c7e4.js.map": "/KTANE-Bomb-Manual/static/js/main.5031c7e4.js.map",
+    "main.fc08b6a4.js.map": "/KTANE-Bomb-Manual/static/js/main.fc08b6a4.js.map",
     "787.f44ef36e.chunk.js.map": "/KTANE-Bomb-Manual/static/js/787.f44ef36e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.73fb6361.css",
-    "static/js/main.5031c7e4.js"
+    "static/js/main.fc08b6a4.js"
   ]
 }
