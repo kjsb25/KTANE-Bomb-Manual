@@ -15,7 +15,13 @@ type Props = {
 
 function BombStateDisplay(props: Props) {
     return (
-        <Grid container spacing={2} alignItems="center">
+        <Grid
+            container
+            spacing={2}
+            justifyContent="center"
+            alignItems="center"
+            sx={{ mx: 'auto', my: 1 }}
+        >
             <Grid item>
                 <Typography display="inline">
                     Serial Last Digit is Even:{' '}
@@ -39,12 +45,12 @@ function BombStateDisplay(props: Props) {
                 <StateValue>{props.bombState.numStrikes}</StateValue>
             </Grid>
             <Grid item>
-                <Button variant="contained" onClick={props.strike}>
+                <Button variant="outlined" onClick={props.strike}>
                     Strike!
                 </Button>
             </Grid>
             <Grid item>
-                <Button variant="contained" onClick={props.clearBombState}>
+                <Button variant="outlined" onClick={props.clearBombState}>
                     Clear Bomb Properties
                 </Button>
             </Grid>
